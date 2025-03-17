@@ -95,7 +95,7 @@ class AddrXCore:
         response_text = json.loads(response.text)
 
         return Address(
-            exclude_types=self.exclude_address_types,
+            exclude_fields=self.exclude_address_types,
             **{el["label"]: el["value"] for el in response_text},
         )
 
@@ -117,7 +117,7 @@ class AddrXCore:
 
                 results.append(
                     Address(
-                        exclude_types=self.exclude_address_types,
+                        exclude_fields=self.exclude_address_types,
                         **{el["label"]: el["value"] for el in response_text},
                     )
                 )
@@ -135,6 +135,5 @@ class AddrXCore:
         request_url = self.construct_url(method="expand", address=address)
         response = requests.get(request_url)
         response_text = json.loads(response.text)
-        
-        return response_text
 
+        return response_text
