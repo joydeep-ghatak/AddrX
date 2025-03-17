@@ -29,7 +29,7 @@ pip install addrx
     - `address` - Addresses to parse.
     - `exclude_address_type` - A list of address type that is not required | default None **Returns**: Parsed address.
 
-- **`AddrX.parser(url: str, address: str, exclude_address_type: list[str] = None)`**
+- **`AddrX.parser(url: str, address_list: list[str], exclude_address_type: list[str])`**
 
   - Parses a list of addresses synchronously.
   - **Parameters**:
@@ -40,7 +40,7 @@ pip install addrx
 
   - **Returns**: List of parsed address.
 
-- **`AddrX.async_parser(url: str, address: str, exclude_address_type: list[str] = None)`**
+- **`AddrX.async_parser(url: str, address_list: list[str], exclude_address_type: list[str])`**
 
   - Parses a list of addresses asynchronously.
   - **Parameters**:
