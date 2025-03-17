@@ -9,6 +9,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/joydeep-ghatak/AddrX",
+    license="MIT",
     packages=find_packages(),
     install_requires=[
         "annotated-types==0.7.0",
@@ -28,7 +29,6 @@ setup(
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.11',
