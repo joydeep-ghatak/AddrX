@@ -12,6 +12,13 @@ class AddrX:
             url: URL of the Libpostal service.
             address: address to parse.
             exclude_address_type: List of address types to exclude from the output.
+                                  
+                                Available address types:
+                                  house | category | near | house_number | road
+                                  unit | level | entrance | po_box | postcode
+                                  suburb | city_district | city | island
+                                  state_district | state | country_region
+                                  country | world_region
 
         Returns:
             parsed address.
@@ -29,6 +36,14 @@ class AddrX:
             url: URL of the Libpostal service.
             address_list: List of addresses to parse.
             exclude_address_type: List of address types to exclude from the output.
+
+                                Available address types:
+                                  house | category | near | house_number | road
+                                  unit | level | entrance | po_box | postcode
+                                  suburb | city_district | city | island
+                                  state_district | state | country_region
+                                  country | world_region
+
 
         Returns:
             List of parsed addresses.
@@ -50,6 +65,14 @@ class AddrX:
             url: URL of the Libpostal service.
             address_list: List of addresses to parse.
             exclude_address_type: List of address types to exclude from the output.
+                                
+                                Available address types:
+                                  house | category | near | house_number | road
+                                  unit | level | entrance | po_box | postcode
+                                  suburb | city_district | city | island
+                                  state_district | state | country_region
+                                  country | world_region
+
 
         Returns:
             List of parsed addresses.
