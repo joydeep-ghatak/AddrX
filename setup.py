@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="addrx",
-    version="0.1.0",
+    version="0.1.1",
     author="Joydeep Ghatak",
     author_email="joydeep.ghatak007@gmail.com",
     description="A Python client for parsing address using Libpostal API service.",
@@ -28,7 +28,7 @@ setup(
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.11',

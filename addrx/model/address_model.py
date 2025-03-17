@@ -25,7 +25,7 @@ class Address(BaseModel):
     country: Optional[str] = None
     world_region: Optional[str] = None
 
-    def __init__(self, exclude_fields: list = None, **data):
+    def __init__(self, exclude_fields: list = None, **data:dict[str,str]):
         """Overwrite the speCific field values with None"""
 
         if isinstance(exclude_fields, list):

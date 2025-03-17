@@ -10,12 +10,12 @@ addr_list = address * 1
 
 def test():
 
-    ####  test parsing a single addresse
+    ###  test parsing a single addresse
     single_s_time = time.time()
 
     response_single = AddrX.single_parser(url=url, 
                                           address=address[0], 
-                                          exclude_address_type=[]
+                                          exclude_address_type=["city"]
                                           )
 
     print(response_single)
@@ -29,7 +29,7 @@ def test():
 
     response_sync = AddrX.parser(url=url, 
                                  address_list=addr_list, 
-                                 exclude_address_type=[]
+                                 exclude_address_type=["road"]
                                  )
 
     print(response_sync)
@@ -43,7 +43,7 @@ def test():
 
     response_async = AddrX.async_parser(url=url, 
                                         address_list=addr_list, 
-                                        exclude_address_type=[]
+                                        exclude_address_type=["road", "country"]
                                         )
 
     print(response_async)
